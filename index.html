@@ -61,17 +61,34 @@
             margin-top: 0;
         }
 
-        .project {
+        .project, .math-formula, .tool {
             border-left: 4px solid #2196f3;
             padding: 15px;
             margin: 20px 0;
             background: #fafafa;
         }
 
+        .math-formula code {
+            display: block;
+            font-family: "Courier New", monospace;
+            background: #e8e8e8;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
             color: #777;
+        }
+
+        ul.tools-list {
+            padding-left: 20px;
+        }
+
+        ul.tools-list li {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -84,6 +101,8 @@
         <ul>
             <li><a href="#home">Accueil</a></li>
             <li><a href="#projects">Projets</a></li>
+            <li><a href="#math">Formules</a></li>
+            <li><a href="#tools">Outils</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -118,6 +137,48 @@
             <p>Application web permettant de tester différents modèles ML.</p>
             <a href="https://github.com/">Voir le projet</a>
         </div>
+    </div>
+
+    <!-- SECTION FORMULES MATHÉMATIQUES -->
+    <div id="math" class="section">
+        <h2>Formules Mathématiques</h2>
+
+        <div class="math-formula">
+            <h3>1. Régression linéaire simple</h3>
+            <code>y = β₀ + β₁x + ε</code>
+            <p>Où β₀ est l'ordonnée à l'origine, β₁ la pente et ε l'erreur.</p>
+        </div>
+
+        <div class="math-formula">
+            <h3>2. Fonction Sigmoid (pour classification logistique)</h3>
+            <code>σ(x) = 1 / (1 + e⁻ˣ)</code>
+        </div>
+
+        <div class="math-formula">
+            <h3>3. Erreur quadratique moyenne (MSE)</h3>
+            <code>MSE = (1/n) * Σ(yᵢ - ŷᵢ)²</code>
+        </div>
+
+        <div class="math-formula">
+            <h3>4. Entropie (Information gain en ML)</h3>
+            <code>H(X) = - Σ p(x) log₂ p(x)</code>
+        </div>
+    </div>
+
+    <!-- SECTION OUTILS ET LANGAGES -->
+    <div id="tools" class="section">
+        <h2>Outils & Langages</h2>
+        <ul class="tools-list">
+            <li>Python (pandas, numpy, scikit-learn, matplotlib, seaborn)</li>
+            <li>R et RStudio</li>
+            <li>SQL / PostgreSQL</li>
+            <li>Jupyter Notebook / Jupyter Lab</li>
+            <li>Git & GitHub</li>
+            <li>Power BI / Tableau</li>
+            <li>Docker (pour déploiement de modèles)</li>
+            <li>Streamlit / Flask (applications web ML)</li>
+            <li>TensorFlow / PyTorch (Deep Learning)</li>
+        </ul>
     </div>
 
     <!-- SECTION CONTACT -->
