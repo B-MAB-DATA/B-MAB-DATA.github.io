@@ -4,193 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Data & IA - B-MAB-DATA</title>
-
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+        h1 {
             color: #333;
         }
-
-        /* Barre de navigation */
-        nav {
-            background: #222;
-            color: white;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-
-        nav .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Section */
-        .section {
-            max-width: 900px;
-            margin: 50px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-        }
-
-        .section h2 {
-            margin-top: 0;
-        }
-
-        .project, .math-formula, .tool {
-            border-left: 4px solid #2196f3;
-            padding: 15px;
-            margin: 20px 0;
-            background: #fafafa;
-        }
-
-        .math-formula code {
-            display: block;
-            font-family: "Courier New", monospace;
-            background: #e8e8e8;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin-top: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #777;
-        }
-
-        ul.tools-list {
-            padding-left: 20px;
-        }
-
-        ul.tools-list li {
-            margin: 5px 0;
+        p {
+            font-size: 18px;
         }
     </style>
 </head>
-
 <body>
+    <div class="container">
+        <h1>Bienvenue dans mon Portfolio Data & IA</h1>
+        <p>Je m'appelle <strong>B-MAB-DATA</strong> et je suis passionné par :
+            <ul>
+                <li>Science des données</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>IA appliquée</li>
+                <li>Analyse de données</li>
+            </ul>
+        </p>
 
-    <!-- BARRE DE NAVIGATION -->
-    <nav>
-        <div class="logo">B-MAB-DATA</div>
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#math">Formules</a></li>
-            <li><a href="#tools">Outils</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- SECTION ACCUEIL -->
-    <div id="home" class="section">
-        <h2>Bienvenue</h2>
         <p>
-            Je suis passionné par la Data Science, le Machine Learning et l’IA.
-            Ce portfolio présente mes projets, mes recherches et mes réalisations.
+            Ce site est en construction.<br>
+            Bientôt vous découvrirez mes projets, notebooks, modèles IA et plus encore.
         </p>
     </div>
-
-    <!-- SECTION PROJETS -->
-    <div id="projects" class="section">
-        <h2>Projets</h2>
-
-        <div class="project">
-            <h3>📌 Projet 1 — Classification Iris</h3>
-            <p>Création et évaluation d'un modèle ML de classification.</p>
-            <a href="https://github.com/">Voir le projet</a>
-        </div>
-
-        <div class="project">
-            <h3>📌 Projet 2 — Régression Linéaire</h3>
-            <p>Analyse statistique et modélisation prédictive.</p>
-            <a href="https://github.com/">Voir le projet</a>
-        </div>
-
-        <div class="project">
-            <h3>📌 Projet 3 — Application Streamlit IA</h3>
-            <p>Application web permettant de tester différents modèles ML.</p>
-            <a href="https://github.com/">Voir le projet</a>
-        </div>
-    </div>
-
-    <!-- SECTION FORMULES MATHÉMATIQUES -->
-    <div id="math" class="section">
-        <h2>Formules Mathématiques</h2>
-
-        <div class="math-formula">
-            <h3>1. Régression linéaire simple</h3>
-            <code>y = β₀ + β₁x + ε</code>
-            <p>Où β₀ est l'ordonnée à l'origine, β₁ la pente et ε l'erreur.</p>
-        </div>
-
-        <div class="math-formula">
-            <h3>2. Fonction Sigmoid (pour classification logistique)</h3>
-            <code>σ(x) = 1 / (1 + e⁻ˣ)</code>
-        </div>
-
-        <div class="math-formula">
-            <h3>3. Erreur quadratique moyenne (MSE)</h3>
-            <code>MSE = (1/n) * Σ(yᵢ - ŷᵢ)²</code>
-        </div>
-
-        <div class="math-formula">
-            <h3>4. Entropie (Information gain en ML)</h3>
-            <code>H(X) = - Σ p(x) log₂ p(x)</code>
-        </div>
-    </div>
-
-    <!-- SECTION OUTILS ET LANGAGES -->
-    <div id="tools" class="section">
-        <h2>Outils & Langages</h2>
-        <ul class="tools-list">
-            <li>Python (pandas, numpy, scikit-learn, matplotlib, seaborn)</li>
-            <li>R et RStudio</li>
-            <li>SQL / PostgreSQL</li>
-            <li>Jupyter Notebook / Jupyter Lab</li>
-            <li>Git & GitHub</li>
-            <li>Power BI / Tableau</li>
-            <li>Docker (pour déploiement de modèles)</li>
-            <li>Streamlit / Flask (applications web ML)</li>
-            <li>TensorFlow / PyTorch (Deep Learning)</li>
-        </ul>
-    </div>
-
-    <!-- SECTION CONTACT -->
-    <div id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email : <strong>ton-email@gmail.com</strong></p>
-        <p>LinkedIn : <a href="#" target="_blank">Ton LinkedIn</a></p>
-    </div>
-
-    <footer>
-        © 2025 — B-MAB-DATA — Portfolio professionnel
-    </footer>
-
 </body>
 </html>
