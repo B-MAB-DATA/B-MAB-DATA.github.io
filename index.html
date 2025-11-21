@@ -4,45 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Data & IA - B-MAB-DATA</title>
+
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 900px;
-            margin: auto;
-            box-shadow: 0 0 12px rgba(0,0,0,0.1);
-        }
-        h1 {
+            background: #f7f7f7;
             color: #333;
         }
-        p {
-            font-size: 18px;
+
+        header {
+            background: white;
+            padding: 20px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .project {
+            padding: 15px;
+            border-left: 4px solid #4c8bf5;
+            margin: 20px 0;
+            background: #fafafa;
+        }
+
+        footer {
+            text-align: center;
+            margin: 50px 0;
+            color: #777;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Bienvenue dans mon Portfolio Data & IA</h1>
-        <p>Je m'appelle <strong>B-MAB-DATA</strong> et je suis passionné par :
-            <ul>
-                <li>Science des données</li>
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>IA appliquée</li>
-                <li>Analyse de données</li>
-            </ul>
-        </p>
 
+<body>
+
+    <header>
+        <h1>B-MAB-DATA — Portfolio Data & IA</h1>
+    </header>
+
+    <div class="section">
+        <h2>À propos</h2>
         <p>
-            Ce site est en construction.<br>
-            Bientôt vous découvrirez mes projets, notebooks, modèles IA et plus encore.
+            Je suis passionné par la Data Science, le Machine Learning et l’Intelligence Artificielle.
+            Ce site présente mes projets, mes compétences et mes travaux.
         </p>
     </div>
+
+    <div class="section">
+        <h2>Projets</h2>
+
+        <div class="project">
+            <h3>📌 Projet 1 — Classification des fleurs Iris</h3>
+            <p>Modèle ML complet avec prétraitement, entraînement et évaluation.</p>
+            <a href="https://github.com/">Voir le projet</a>
+        </div>
+
+        <div class="project">
+            <h3>📌 Projet 2 — Prédiction avec Régression Linéaire</h3>
+            <p>Analyse complète, hypothèses du modèle, métriques et visualisations.</p>
+            <a href="https://github.com/">Voir le projet</a>
+        </div>
+
+        <div class="project">
+            <h3>📌 Projet 3 — Application Streamlit IA</h3>
+            <p>Application interactive permettant de tester des modèles ML.</p>
+            <a href="https://github.com/">Voir le projet</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email : <strong>ton-email@gmail.com</strong></p>
+        <p>LinkedIn : <a href="#">Ton LinkedIn</a></p>
+    </div>
+
+    <footer>
+        © 2025 — B-MAB-DATA — Portfolio professionnel
+    </footer>
+
 </body>
 </html>
